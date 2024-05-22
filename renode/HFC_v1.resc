@@ -4,10 +4,10 @@
 using sysbus
 $name?="HFC_v1"
 mach create $name
-i @STM32L4_RCC.cs
+i @renode/STM32L4_RCC.cs
 
 
-machine LoadPlatformDescription @STM32L4.repl
+machine LoadPlatformDescription @renode/STM32L4.repl
 
 cpu PerformanceInMips 125
 
